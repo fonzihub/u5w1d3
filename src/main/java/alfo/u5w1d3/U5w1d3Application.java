@@ -1,6 +1,7 @@
 package alfo.u5w1d3;
 
 import alfo.u5w1d3.entities.Menu;
+import alfo.u5w1d3.entities.Tavolo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,6 +21,10 @@ public class U5w1d3Application {
 
         Menu menu = ctx.getBean(Menu.class);
         menu.menu();
+
+
+        Tavolo t = ctx.getBean(Tavolo.class);
+        System.out.println(t);
 
         ctx.close();
     }
